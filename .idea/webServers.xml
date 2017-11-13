@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="d2df875c-a95a-49d8-a12f-98d51114c033" name="lab3.1" url="https://github.com/DmitryKulinich/lab3.1.git">
+        <fileTransfer port="0" mountedRoot="E:\Study\3 semestr\FundamentalsOfJAva\Lab\Lab3" accessType="MOUNT" />
+      </webServer>
+    </option>
+  </component>
+</project>

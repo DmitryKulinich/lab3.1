@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+
+<AnchorPane id="AnchorPane" maxHeight="-1.0" maxWidth="-1.0" minHeight="-1.0" minWidth="-1.0" prefHeight="400.0" prefWidth="1000.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="Controllers.Controller">
+  <children>
+    <MenuBar AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+      <menus>
+        <Menu mnemonicParsing="false" text="File">
+          <items>
+            <MenuItem mnemonicParsing="false" onAction="#saveXml" text="Save to Xml" fx:id="saveXml" />
+            <MenuItem mnemonicParsing="false" onAction="#getXml" text="Get from Xml" fx:id="getXml" />
+          </items>
+        </Menu>
+        <Menu mnemonicParsing="false" text="Help">
+          <items>
+            <MenuItem mnemonicParsing="false" onAction="#about" text="About" fx:id="about" />
+          </items>
+        </Menu>
+      </menus>
+    </MenuBar>
+    <TableView fx:id="table" maxWidth="-1.0" prefHeight="376.0" prefWidth="332.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="650.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="24.0">
+      <columns>
+        <TableColumn maxWidth="5000.0" minWidth="6.0" prefWidth="32.0" text="Hour" fx:id="oclockColumn" />
+        <TableColumn maxWidth="5000.0" minWidth="10.0" prefWidth="134.0" text="Number of passenger" fx:id="numOfPassColumn" />
+        <TableColumn maxWidth="5000.0" minWidth="10.0" prefWidth="348.0" text="Comment" fx:id="commentColumn" />
+      </columns>
+    </TableView>
+    <TabPane fx:id="rightSide" prefHeight="376.0" prefWidth="250.0" tabClosingPolicy="UNAVAILABLE" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="24.0">
+      <tabs>
+        <Tab text="New data">
+          <content>
+            <AnchorPane id="Content" minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+              <children>
+                <TextField fx:id="nameOfStation" prefWidth="200.0" AnchorPane.leftAnchor="25.0" AnchorPane.rightAnchor="25.0" AnchorPane.topAnchor="45.0" />
+                <TextField fx:id="yearOfOpening" prefWidth="200.0" AnchorPane.leftAnchor="25.0" AnchorPane.rightAnchor="25.0" AnchorPane.topAnchor="100.0" />
+                <Label text="Name of station metro" AnchorPane.leftAnchor="25.0" AnchorPane.topAnchor="20.0" />
+                <Label text="Year of opening" AnchorPane.leftAnchor="25.0" AnchorPane.topAnchor="75.0" />
+                <Button layoutX="25.0" layoutY="146.0" mnemonicParsing="false" onAction="#enterData" text="Enter" />
+              </children>
+            </AnchorPane>
+          </content>
+        </Tab>
+        <Tab text="Search">
+          <content>
+            <AnchorPane id="Content" minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+              <children>
+                <Button layoutX="30.0" layoutY="44.0" mnemonicParsing="false" onAction="#minPasHour" text="Minimum passenger hour" />
+                <Button layoutX="30.0" layoutY="95.0" mnemonicParsing="false" onAction="#maxCommWords" text="Maximum words in commentary" />
+                <Button layoutX="30.0" layoutY="145.0" mnemonicParsing="false" onAction="#sumOfPas" text="Sum of all the passangers" />
+              </children>
+            </AnchorPane>
+          </content>
+        </Tab>
+        <Tab text="Sort">
+          <content>
+            <AnchorPane id="Content" minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+              <children>
+                <Button layoutX="30.0" layoutY="78.0" mnemonicParsing="false" onAction="#sortByPass" text="From max passenger to min" />
+                <Button layoutX="30.0" layoutY="162.0" mnemonicParsing="false" onAction="#sortByComm" text="From max to min commentary words" />
+              </children>
+            </AnchorPane>
+          </content>
+        </Tab>
+      </tabs>
+    </TabPane>
+    <AnchorPane prefHeight="376.0" prefWidth="400.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="250.0" AnchorPane.topAnchor="24.0">
+      <children>
+        <Label layoutX="72.0" layoutY="105.0" text="Name of station metro:" />
+        <Label fx:id="name" layoutX="72.0" layoutY="142.0" text="Label" />
+        <Label layoutX="72.0" layoutY="192.0" text="Year of opening" />
+        <Label id="yaer" fx:id="year" layoutX="72.0" layoutY="229.0" text="Label" />
+        <Label layoutX="72.0" layoutY="46.0" text="Main info about station" />
+      </children>
+    </AnchorPane>
+  </children>
+</AnchorPane>

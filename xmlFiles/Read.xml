@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<readWriteXML>
+    <hours>
+        <comment>comment comment comment comment comment comment comment comment comment comment </comment>
+        <numberOfPassenger>0</numberOfPassenger>
+        <oclock>0</oclock>
+    </hours>
+    <hours>
+        <comment>comment comment comment </comment>
+        <numberOfPassenger>4562</numberOfPassenger>
+        <oclock>1</oclock>
+    </hours>
+    <hours>
+        <comment>comment comment comment comment comment comment comment </comment>
+        <numberOfPassenger>9124</numberOfPassenger>
+        <oclock>2</oclock>
+    </hours>
+    <hours>
+        <comment>comment comment comment comment comment </comment>
+        <numberOfPassenger>13686</numberOfPassenger>
+        <oclock>3</oclock>
+    </hours>
+    <hours>
+        <comment>comment comment comment comment comment comment comment comment comment </comment>
+        <numberOfPassenger>18248</numberOfPassenger>
+        <oclock>4</oclock>
+    </hours>
+    <hours>
+        <comment>comment comment comment comment comment </comment>
+        <numberOfPassenger>22810</numberOfPassenger>
+        <oclock>5</oclock>
+    </hours>
+    <hours>
+        <comment>comment comment comment comment comment comment comment comment comment comment </comment>
+        <numberOfPassenger>27372</numberOfPassenger>
+        <oclock>6</oclock>
+    </hours>
+    <hours>
+        <comment>comment comment comment </comment>
+        <numberOfPassenger>31934</numberOfPassenger>
+        <oclock>7</oclock>
+    </hours>
+    <hours>
+        <comment>comment comment comment comment comment comment comment comment comment </comment>
+        <numberOfPassenger>36496</numberOfPassenger>
+        <oclock>8</oclock>
+    </hours>
+    <hours>
+        <comment>comment comment comment comment comment comment comment comment comment comment </comment>
+        <numberOfPassenger>41058</numberOfPassenger>
+        <oclock>9</oclock>
+    </hours>
+    <hours>
+        <comment>comment comment comment comment </comment>
+        <numberOfPassenger>45620</numberOfPassenger>
+        <oclock>10</oclock>
+    </hours>
+    <hours>
+        <comment>comment comment comment comment comment comment comment comment comment comment </comment>
+        <numberOfPassenger>50182</numberOfPassenger>
+        <oclock>11</oclock>
+    </hours>
+    <hours>
+        <comment>comment comment comment </comment>
+        <numberOfPassenger>54744</numberOfPassenger>
+        <oclock>12</oclock>
+    </hours>
+    <hours>
+        <comment>comment comment comment comment comment comment comment </comment>
+        <numberOfPassenger>59306</numberOfPassenger>
+        <oclock>13</oclock>
+    </hours>
+    <hours>
+        <comment>comment comment comment comment </comment>
+        <numberOfPassenger>63868</numberOfPassenger>
+        <oclock>14</oclock>
+    </hours>
+    <hours>
+        <comment>comment comment comment comment comment comment comment comment comment </comment>
+        <numberOfPassenger>68430</numberOfPassenger>
+        <oclock>15</oclock>
+    </hours>
+    <hours>
+        <comment>comment comment comment comment comment comment comment comment comment </comment>
+        <numberOfPassenger>72992</numberOfPassenger>
+        <oclock>16</oclock>
+    </hours>
+    <hours>
+        <comment>comment comment comment comment comment comment comment comment comment </comment>
+        <numberOfPassenger>77554</numberOfPassenger>
+        <oclock>17</oclock>
+    </hours>
+    <hours>
+        <comment>comment comment comment comment comment </comment>
+        <numberOfPassenger>10396</numberOfPassenger>
+        <oclock>18</oclock>
+    </hours>
+    <hours>
+        <comment>comment comment comment comment comment comment comment comment comment comment </comment>
+        <numberOfPassenger>10426</numberOfPassenger>
+        <oclock>19</oclock>
+    </hours>
+    <hours>
+        <comment>comment comment comment </comment>
+        <numberOfPassenger>10456</numberOfPassenger>
+        <oclock>20</oclock>
+    </hours>
+    <hours>
+        <comment>comment comment comment comment comment comment comment comment comment comment comment comment </comment>
+        <numberOfPassenger>10486</numberOfPassenger>
+        <oclock>21</oclock>
+    </hours>
+    <hours>
+        <comment>comment comment comment comment comment comment comment comment </comment>
+        <numberOfPassenger>10516</numberOfPassenger>
+        <oclock>22</oclock>
+    </hours>
+    <hours>
+        <comment>comment comment comment comment comment comment comment comment comment comment comment comment </comment>
+        <numberOfPassenger>10546</numberOfPassenger>
+        <oclock>23</oclock>
+    </hours>
+    <name>Pushkinskaya station</name>
+    <yearOfOpening>1998</yearOfOpening>
+</readWriteXML>

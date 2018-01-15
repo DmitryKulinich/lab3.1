@@ -2,7 +2,6 @@ package Facade;
 
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
-import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
@@ -12,9 +11,7 @@ import javafx.scene.control.cell.TextFieldTableCell;
 import javafx.stage.FileChooser;
 import javafx.stage.Stage;
 import javafx.util.converter.IntegerStringConverter;
-import model.ReadWriteXML;
-import model.hour;
-import model.metroStation;
+import model.*;
 import tableCell.textFieldTableCell;
 
 import java.io.File;
@@ -75,19 +72,24 @@ public class MainFacade {
         alert.showAndWait();
     }
 
-    public void saveXml() {
+    public void save() {
         if(current != null) {
             FileChooser fileChooser = new FileChooser();
-            fileChooser.setTitle("Save to xml");
+            fileChooser.setTitle("Save");
             fileChooser.getExtensionFilters().addAll(
-                    new FileChooser.ExtensionFilter("XML", "*.xml")
+                    new FileChooser.ExtensionFilter("XML", "*.xml"),
+                    new FileChooser.ExtensionFilter("TXT","*.txt")
             );
             File file;
             if ((file = fileChooser.showSaveDialog(null)) != null) {
                 try {
-                    // updateSourceData(); // оновлюємо дані в моделі
-                    ReadWriteXML rw = new ReadWriteXML(current);
-                    rw.WriteXML(file.getCanonicalPath());
+                    ReadWrite rw;
+                    if(fileChooser.getSelectedExtensionFilter().getDescription().equals("XML")){
+                            rw = ReadWriteFactory.getRW("XML", current);
+                    } else {
+                        rw = ReadWriteFactory.getRW("TXT", current);
+                    }
+                    rw.write(file.getCanonicalPath());
                     showMessage("Результати успішно збережені");
                 } catch (Exception e) {
                     showError("Помилка запису в файл");
@@ -98,17 +100,23 @@ public class MainFacade {
         }
     }
 
-    public void getXml() {
-        ReadWriteXML rw = new ReadWriteXML();
+    public void get() {
+        ReadWrite rw;
         Stage stage = new Stage();
         FileChooser fileChooser = new FileChooser();
         fileChooser.setTitle("Open Resource File");
         fileChooser.getExtensionFilters().addAll(
-                new FileChooser.ExtensionFilter("XML", "*.xml")
+                new FileChooser.ExtensionFilter("XML", "*.xml"),
+                new FileChooser.ExtensionFilter("TXT","*.txt")
 
         );
         File selectedFile = fileChooser.showOpenDialog(stage);
-        current = rw.readXML(selectedFile);
+        if(fileChooser.getSelectedExtensionFilter().getDescription().equals("XML")){
+            rw = ReadWriteFactory.getRW("XML");
+        } else {
+            rw = ReadWriteFactory.getRW("TXT");
+        }
+        current = rw.read(selectedFile);
         updateTable();
     }
 

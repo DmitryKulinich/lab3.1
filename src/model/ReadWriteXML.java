@@ -12,7 +12,7 @@ import java.io.File;
  */
 
 @XmlRootElement
-public class ReadWriteXML extends metroStation {
+public class ReadWriteXML extends metroStation implements ReadWrite{
 
     public ReadWriteXML(String name, Integer yearOfOpening)
     {
@@ -27,37 +27,23 @@ public class ReadWriteXML extends metroStation {
     public ReadWriteXML() {
     }
 
-    public void WriteXML(String title){
-//        Date date = new Date();
-//        String Date = date.toString();
-//        String[] splitDate = Date.split(" ");
-//        Date = "";
-//        for(int i = 0; i<splitDate.length; i++){
-//            if(i == splitDate.length -1){
-//                Date += splitDate[i];
-//            }else {
-//                Date += splitDate[i] + "_";
-//            }
-//        }
-//        String title = "./xmlFiles/SavedData.xml";
+    public void write(String title){
         try {
             File file = new File(title);
             JAXBContext jaxbContext = JAXBContext.newInstance(ReadWriteXML.class);
             Marshaller jaxbMarshaller = jaxbContext.createMarshaller();
 
-            // output pretty printed
             jaxbMarshaller.setProperty(Marshaller.JAXB_FORMATTED_OUTPUT, true);
 
 
             jaxbMarshaller.marshal(this, file);
-            jaxbMarshaller.marshal(this, System.out);
 
         } catch (JAXBException e) {
             e.printStackTrace();
         }
     }
 
-    public ReadWriteXML readXML(File file){
+    public ReadWriteXML read(File file){
         ReadWriteXML obj = new ReadWriteXML();
         try {
             JAXBContext jaxbContext = JAXBContext.newInstance(ReadWriteXML.class);

@@ -63,12 +63,12 @@ public class Controller implements Initializable {
 
     @FXML public void saveXml(ActionEvent actionEvent) {
         facade = MainFacade.getInstance();
-        facade.saveXml();
+        facade.save();
     }
 
     @FXML public void getXml(ActionEvent actionEvent) {
         facade = MainFacade.getInstance();
-        facade.getXml();
+        facade.get();
     }
 
     @FXML public void about(ActionEvent actionEvent) {

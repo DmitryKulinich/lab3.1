@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<readWriteXML>
+<readWriteXtL>
     <hours>
         <comment>xgjnfdrt57ughjn d jdf </comment>
         <numberOfPassenger>5678456</numberOfPassenger>
@@ -122,4 +122,4 @@
     </hours>
     <name>zhzfdh</name>
     <yearOfOpening>577</yearOfOpening>
-</readWriteXML>
+</readWriteXtL>

@@ -1,7 +1,6 @@
-package main;
+package model;
 
 import java.util.Comparator;
-import java.util.StringTokenizer;
 
 /**
  * Created by dmitry on 9/19/17.

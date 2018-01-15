@@ -1,4 +1,4 @@
-package main;
+package model;
 
 import javax.xml.bind.annotation.*;
 import java.util.Arrays;

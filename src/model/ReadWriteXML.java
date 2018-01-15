@@ -1,4 +1,4 @@
-package main;
+package model;
 
 import javax.xml.bind.JAXBContext;
 import javax.xml.bind.JAXBException;
@@ -6,7 +6,6 @@ import javax.xml.bind.Marshaller;
 import javax.xml.bind.Unmarshaller;
 import javax.xml.bind.annotation.XmlRootElement;
 import java.io.File;
-import java.util.Date;
 
 /**
  * Created by dmitry on 9/19/17.
